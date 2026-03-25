@@ -43,7 +43,7 @@ Steps:
 
 
 
-5\. create secretes.yaml into the same folder as your configuration.yaml if not already existing, and add your personal username and password to it.
+5\. Create secrets.yaml into the same folder as your configuration.yaml if not already existing, and add your personal username and password to it.
 
 # secrets.yaml
 
