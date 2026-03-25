@@ -39,6 +39,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     sensors = [SmartPoolSensor(session, key, name) for key, name in SENSOR_TYPES.items()]
     add_entities(sensors, True)
 
+
 # --------------------------
 # Shared session class
 # --------------------------
@@ -117,6 +118,7 @@ class SmartPoolSession:
 
         return session
 
+
 # --------------------------
 # Sensor class
 # --------------------------
@@ -138,6 +140,17 @@ class SmartPoolSensor(Entity):
     @property
     def extra_state_attributes(self):
         return {"last_update": self.session._data.get("last_update")}
+
+    @property
+    def unit_of_measurement(self):
+        """Zorgt dat HA grafieken kan maken"""
+        if self.key == "ph":
+            return ""  # pH geen eenheid
+        elif self.key == "rx":
+            return "mV"
+        elif self.key in ["water_temp", "outside_temp"]:
+            return "°C"
+        return None  # andere sensoren krijgen geen grafiek
 
     def update(self):
         self.session.update()
