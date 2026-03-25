@@ -32,7 +32,7 @@ Steps:
 
 3\. Click on the smartpool integration and select "Install".
 
-# configuration.yaml changes
+#### configuration.yaml changes
 4\. Add following lines to configuration.yaml
 
 - sensor:
@@ -43,7 +43,7 @@ Steps:
 &#x20;   password: !secret smartpool\_pass
 
 
-# secrets.yaml creation
+#### secrets.yaml creation
 
 5\. Create secrets.yaml into the same folder as your configuration.yaml if not already existing, and add your personal username and password to it.
 
