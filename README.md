@@ -40,7 +40,7 @@ Steps:
 
 &#x20;   username: !secret smartpool\_user
 
-&#x20;   password: !secret smartpool\_pass"
+&#x20;   password: !secret smartpool\_pass
 
 
 #### secrets.yaml creation
