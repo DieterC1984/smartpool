@@ -12,5 +12,5 @@
   "iot_class": "cloud_polling",
   "config_flow": false,
   "homeassistant": "2023.8.0",
-  "logo": "logo.png"
+  "logo": "smartpool_logo.png"
 }
