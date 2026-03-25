@@ -26,7 +26,7 @@ Steps:
 
 
 
-1. Ensure you have HACS installed in your Home Assistant setup.
+1\. Ensure you have HACS installed in your Home Assistant setup.
 
 2\. Go to the HACS store and search for smartpool
 
