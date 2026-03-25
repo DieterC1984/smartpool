@@ -35,12 +35,12 @@ Steps:
 #### configuration.yaml changes
 4\. Add following lines to configuration.yaml
 
-- sensor:
+"- sensor:
   - platform: smartpool
 
 &#x20;   username: !secret smartpool\_user
 
-&#x20;   password: !secret smartpool\_pass
+&#x20;   password: !secret smartpool\_pass"
 
 
 #### secrets.yaml creation
